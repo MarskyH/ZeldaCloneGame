@@ -1,0 +1,46 @@
+- Artes para o jogo / Sprites.
+- Pause, Game Over e Start, Menu.
+- Sistema de animação para o player.
+- Contorle do jogo pelo teclado
+- Sistema para shooting
+- sistema para criação de mapa
+- Sistema de vários levels
+- Inimigos no jogo
+- Boss batle
+- coletar itens
+- aumentar ataque ou desfesa de acordo com o item
+- Sistema de dano
+- SIstema para salvar o jogo e carregar
+- audio e musica (final)
+
+		/*	if (this.calculatedDistance(this.getX(), Game.player.getX(), this.getY(), Game.player.getY()) < 40) {
+			if(isCollidingWithPlayer()==false) {
+			if ((int) x < Game.player.getX() && World.isFree((int) (x + speed), this.getY())
+					&& !isColliding((int) (x + speed), this.getY())) {
+				x += speed;
+			} else if ((int) x > Game.player.getX() && World.isFree((int) (x - speed), this.getY())
+					&& !isColliding((int) (x - speed), this.getY())) {
+				x -= speed;
+			}
+			if ((int) y < Game.player.getY() && World.isFree(this.getX(), (int) (y + speed))
+					&& !isColliding(this.getX(), (int) (y + speed))) {
+
+				y += speed;
+			} else if ((int) y > Game.player.getY() && World.isFree(this.getX(), (int) (y - speed))
+					&& !isColliding(this.getX(), (int) (y - speed))) {
+				y -= speed;
+			}
+			}else {
+				if(Game.rand.nextInt(100)<10) {
+				Game.player.life-=Game.rand.nextInt(5);
+				Game.player.isDamaged = true;	
+				}
+			}
+			/*else {
+				if(Game.rand.nextInt()<50) {
+					x += speed;
+					x -= speed;
+					y += speed;
+					y -= speed;
+				}
+			}*/
